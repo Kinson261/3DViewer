@@ -1568,6 +1568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972605145}
   - component: {fileID: 972605146}
+  - component: {fileID: 972605147}
   m_Layer: 0
   m_Name: FileManager
   m_TagString: Untagged
@@ -1600,6 +1601,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 112d7bf8672c2e04b864e5d135869d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &972605147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972605144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a456ba6b82e375d48809da9db51faf04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1048341337
@@ -2335,7 +2348,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307492340}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 972605147}
+        m_TargetAssemblyTypeName: exitApp, Assembly-CSharp
+        m_MethodName: quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1307492340
 MonoBehaviour:
   m_ObjectHideFlags: 0
