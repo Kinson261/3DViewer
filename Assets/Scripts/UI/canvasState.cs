@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class canvasState : MonoBehaviour
 {
     public Canvas canvas;
-    public bool enabled;
+    public bool enabledOnStart;
     // Start is called before the first frame update
     void Start()
     {
         canvas = GetComponent<Canvas>();
-        if (enabled == true){
+        if (enabledOnStart == true){
             canvas.enabled = true;
         }
         else{
