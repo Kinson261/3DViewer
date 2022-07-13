@@ -39,7 +39,7 @@ public class cineCamControl : MonoBehaviour
     public void FixedUpdate(){
         
 
-        if (Input.GetMouseButton(0)){           // TODO: rotate object
+        if (Input.GetMouseButton(0)){           // left click to rotate object
             Debug.Log("rotate");
             if (Input.GetAxisRaw("Mouse X") != 0 || Input.GetAxisRaw("Mouse Y") != 0){
                 target.transform.RotateAround(target.transform.position, Vector3.up, -Input.GetAxisRaw("Mouse X") * rotationSpeed * Time.deltaTime);
